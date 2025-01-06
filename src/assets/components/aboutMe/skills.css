@@ -1,0 +1,10 @@
+.icons-class {
+  background-image: linear-gradient(45deg, #8b5cf6, #ec4899);
+  border-radius: 2px;
+  font-size: 50px;
+}
+
+.container-icons {
+  display: flex;
+  justify-content: space-around;
+}
