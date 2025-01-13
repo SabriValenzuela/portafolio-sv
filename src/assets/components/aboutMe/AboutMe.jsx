@@ -1,8 +1,7 @@
 import { Button, styled } from "@mui/material";
 import { purple } from "@mui/material/colors";
 import React from "react";
-import { Container } from "react-bootstrap";
-import { Skills } from "./skills";
+import { Skills } from "./Skills";
 import cv from "/img/CV Sabrina Valenzuela Nutricionista Desarrolladora.pdf";
 
 export const AboutMe = () => {
