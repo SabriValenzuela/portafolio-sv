@@ -9,53 +9,63 @@ export const AllProjects = () => {
       id: 1,
       title: "CRUD API HL7-FHIR",
       image: "/img/hl7.png",
-      info: "Creación de aplicación que realiza el crear, ver, editar y borrar un paciente, realizada en React",
+      info: "Creación de aplicación que realiza el crear, ver, editar y borrar un paciente, realizada en React.",
+      github: "https://github.com/SabriValenzuela/hl7-app",
+      demo: "https://hl7-app-azure.vercel.app",
     },
 
     {
       id: 2,
-      title: "API Porciones de intercambio [En proceso]",
-      image: "/",
+      title: "API Porciones de intercambio",
+      image: "/img/food-api.png",
       info: "Creación de API (Metodos GET) en laravel sobre porciones de intercambio de alimentos para poder ser utilizada para cuantificar o crear planes alimentarios.",
+      github: "https://github.com/SabriValenzuela/food-api",
     },
 
     {
       id: 3,
-      title: "Backend de ecommerce (CRUD)",
-      image: "/",
-      info: "Creado con JAVA con Springboot, cuenta con todos los items para realizar una aplicación ecommerce, y se puede integrar como API en frontend",
+      title: "Backend Ecommerce (CRUD)",
+      image: "/img/api-ecommerce.png",
+      info: "Creado con Springboot(JAVA), para creación de productos para realizar una aplicación ecommerce, y cuenta con apartado blog.",
+      github: "https://github.com/SabriValenzuela/API-ecommerce",
     },
 
     {
       id: 4,
-      title: "Analisis de Datos OMS [En proceso]",
+      title: "Analisis de Datos OMS ",
       image: "/img/oms.png",
-      info: "Proyecto para iniciarme en el analisis de datos, realizado con R, libereias tydiverse",
+      info: "Proyecto inicial de analisis de datos, realizado con R, librerias tydiverse,ggplot2 y plotly [En proceso]",
+      github: "https://github.com/SabriValenzuela/Analisis-Datos-OMS",
     },
 
     {
       id: 5,
       title: "Portafolio",
-      image: "/",
-      info: "Creado con React, libreria MUI para el diseño, integración de envio de correos con EmailJS",
+      image: "/img/portafolio.png",
+      info: "Creado con React, libreria MUI para el diseño, integración de envio de correos con EmailJS.",
+      github: "https://github.com/SabriValenzuela/portafolio-sv",
     },
     {
       id: 6,
       title: "Aplicación API Taylor Swift",
       image: "/img/api-ts.png",
       info: "Consumo de API con React",
+      github: "https://github.com/SabriValenzuela/Taylor-Swift-App",
+      demo: "https://taylor-swift-app.vercel.app/",
     },
-    {
+    /*     {
       id: 7,
       title: "Calculadora",
       image: "/img/calculadora.png",
       info: "Calculadora creada con HTML, CSS y JS",
-    },
+    }, */
     {
       id: 8,
       title: "Landing Page",
       image: `/img/landing.png`,
       info: "Pagina creada para profesora de danza con HTML, CSS y JS",
+      github: "https://github.com/SabriValenzuela/landing-page-fs",
+      demo: "https://landing-page-fs-wine.vercel.app",
     },
   ];
 
@@ -104,6 +114,8 @@ export const AllProjects = () => {
                   title={project.title}
                   info={project.info}
                   image={project.image}
+                  github={project.github}
+                  demo={project.demo}
                 />
               </div>
             );

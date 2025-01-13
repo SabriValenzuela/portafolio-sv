@@ -129,7 +129,7 @@ export default function ContactMe() {
               sabrina.valenzuela@gmail.com
             </a>
             <a
-              href="https://www.linkedin.com/in/tu-perfil"
+              href="https://www.linkedin.com/in/sabrina-valenzuela/"
               target="_blank"
               rel="noopener noreferrer"
               style={{
