@@ -4,9 +4,10 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import hl7 from "/img/hl7.png";
 
-export const ProjectsCards = ({ title, info, image }) => {
-  console.log(title);
+export const ProjectsCards = ({ title, info, image, github, demo }) => {
+  console.log(image);
 
   return (
     <Card sx={{ maxWidth: 345 }}>

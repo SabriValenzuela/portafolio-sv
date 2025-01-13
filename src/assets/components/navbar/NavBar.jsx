@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import NavLinks from "./NavBarLinks";
 import "./navbar.css";
-import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaBars, FaCode, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const socialLinks = [
   {
@@ -41,6 +41,7 @@ export const NavBar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
+          <FaCode />
           <a href="/">Portafolio</a>
           <button
             className="nav-toggle"
@@ -56,13 +57,13 @@ export const NavBar = () => {
           </ul>
         </div>
 
-        <ul className="social-icons">
+        {/*  <ul className="social-icons">
           {socialLinks.map((item) => (
             <li key={item.id}>
               <a href={item.url}>{item.icon}</a>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );

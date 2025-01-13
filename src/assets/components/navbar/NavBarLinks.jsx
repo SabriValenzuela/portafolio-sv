@@ -1,25 +1,26 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const links = [
   {
     id: 1,
     url: "/",
-    text: "home",
+    text: "Inicio",
   },
 
   {
     id: 2,
-    url: "/about",
-    text: "Sobre mi",
-  },
-  {
-    id: 3,
-    url: "/projects",
+    to: "projects",
     text: "Proyectos",
   },
   {
+    id: 3,
+    to: "about",
+    text: "Sobre mi",
+  },
+  {
     id: 4,
-    url: "/contact",
+    to: "contact",
     text: "Contacto",
   },
 ];
@@ -29,7 +30,16 @@ const NavLinks = () => {
     <>
       {links.map((item) => (
         <li key={item.id}>
-          <a href={item.url}>{item.text}</a>
+          <Link
+            to={item.to}
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-70}
+            style={{ cursor: "pointer" }}
+          >
+            {item.text}
+          </Link>
         </li>
       ))}
     </>
